@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gamer Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+        <iframe id="bgVideo" frameborder="0" height="100%" width="100%" 
+            src="https://www.youtube.com/embed/UtOM_FsZBrM?rel=0&amp;autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1">
+        </iframe>
+    </div>
+    <div class="container">
+        <div id="profileOptions">
+            <div class="profile-info">
+                <img src="img/avatar.jpg" alt="">
+            </div>
+            <div class="main-btns">
+                <button class="active" id="edit">Edit Profile</button>
+                <button id="privacy">Privacy Settings</button>
+            </div>
+            <div class="profile-details">
+                <ul class="detail-menu">
+                    <li>Overview
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                    <li>Recent Activity
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                    <li>Friends
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                    <li>Community
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                    <li>Library
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                    <li>Following
+                        <img src="img/separator.svg" class="separator" alt="line">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <span id="live-status"></span>
+            <h2 class="profile-name">Profile Name</h2>
+            <h3 class="profile-sub-name"><img style="width: 25px;padding: 0 9px;" src="img/twitch-purple.svg"/>  Sub Profile Name</h3>
+            <img class="main-separator" src="img/separator.svg" alt="">
+            <div class="meta-info">
+                <div class="meta-info-title">
+                        <span>About Me</span><br />
+                        <span>My Languages</span>
+                </div>
+                <div class="meta-info-text">
+                        <span>I’m gonna steal the Declaration of Independence</span><br />
+                        <span>English(United States)</span>
+                </div>
+            </div>
+            <div class="trophies">
+                <div class="left-trophies">
+                    <img src="img/star.png" alt="star" class="star">
+                    <div class="progress-bar">
+                        <span class="amount">11</span>
+                        <span class="percent">25%</span>
+                        <div class="bar">
+                            <div class="bar-inner" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="recent-trophies">
+                    <li><h3>Total</h3><h1>630</h1></li>
+                    <li><img src="img/trophy-1.png" alt=""><span>7</span></li>
+                    <li><img style="filter: sepia(1)" src="img/trophy-1.png" alt=""><span>28</span></li>
+                    <li><img style="filter: grayscale(1)" src="img/trophy-1.png" alt=""><span>94</span></li>
+                    <li><img style="filter: contrast(2) hue-rotate(-38deg)" src="img/trophy-1.png" alt=""><span>501</span></li>
+                </ul>
+            </div>
+            <div id="recent-games">
+
+                <!-- single game info -->
+                <div class="game">
+                    <img src="img/separator.svg" class="main-separator" alt="line">
+                    <div class="thumbnail">
+                        <img src="img/game-1.jpg" alt="">
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Last of Us 2 Remaster...</h2>
+                        <h3 class="game-sub-title">Last of Us 2 Remaster...</h3>
+                        <span class="friends-playing"><i class="icon ion-md-person"></i>1/18</span>
+                        <span class="time-played"><i class="icon ion-md-time"></i>00:00:08</span><br /><br />
+                        <span class="console">PS4</span>
+                    </div>
+                </div>
+                
+                <!-- single game info -->
+                <div class="game">
+                    <img src="img/separator.svg" class="main-separator" alt="line">
+                    <div class="thumbnail">
+                        <img src="img/game-1.jpg" alt="">
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Last of Us 2 Remaster...</h2>
+                        <h3 class="game-sub-title">Last of Us 2 Remaster...</h3>
+                        <span class="friends-playing"><i class="icon ion-md-person"></i>1/18</span>
+                        <span class="time-played"><i class="icon ion-md-time"></i>00:00:08</span><br /><br />
+                        <span class="console">PS4</span>
+                    </div>
+                </div>
+                
+                <!-- single game info -->
+                <div class="game">
+                    <img src="img/separator.svg" class="main-separator" alt="line">
+                    <div class="thumbnail">
+                        <img src="img/game-1.jpg" alt="">
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Last of Us 2 Remaster...</h2>
+                        <h3 class="game-sub-title">Last of Us 2 Remaster...</h3>
+                        <span class="friends-playing"><i class="icon ion-md-person"></i>1/18</span>
+                        <span class="time-played"><i class="icon ion-md-time"></i>00:00:08</span><br /><br />
+                        <span class="console">PS4</span>
+                    </div>
+                </div>
+                
+                <!-- single game info -->
+                <div class="game">
+                    <img src="img/separator.svg" class="main-separator" alt="line">
+                    <div class="thumbnail">
+                        <img src="img/game-1.jpg" alt="">
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Last of Us 2 Remaster...</h2>
+                        <h3 class="game-sub-title">Last of Us 2 Remaster...</h3>
+                        <span class="friends-playing"><i class="icon ion-md-person"></i>1/18</span>
+                        <span class="time-played"><i class="icon ion-md-time"></i>00:00:08</span><br /><br />
+                        <span class="console">PS4</span>
+                    </div>
+                </div>
+                
+                <!-- single game info -->
+                <div class="game">
+                    <img src="img/separator.svg" class="main-separator" alt="line">
+                    <div class="thumbnail">
+                        <img src="img/game-1.jpg" alt="">
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Last of Us 2 Remaster...</h2>
+                        <h3 class="game-sub-title">Last of Us 2 Remaster...</h3>
+                        <span class="friends-playing"><i class="icon ion-md-person"></i>1/18</span>
+                        <span class="time-played"><i class="icon ion-md-time"></i>00:00:08</span><br /><br />
+                        <span class="console">PS4</span>
+                    </div>
+                </div>
+                <div class="bottom-gradient"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

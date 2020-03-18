@@ -1,0 +1,391 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+html {  
+    background: #000;
+    color: whitesmoke;
+    font-family: 'Questrial', sans-serif;
+    overflow: hidden;
+}
+
+body , html {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f105; 
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #f1f1f11f; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff6e; 
+}
+
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.icon {
+    padding: 5px;
+}
+
+#live-status {
+    background: radial-gradient(at -41% 29px, #65d7ff, #000da7);
+    border: 2px solid #ffffff6e;
+    width: 20px;
+    height: 20px;
+    margin: 0px 15px;
+    float: left;
+    display: block;
+    border-radius: 100%;
+    box-shadow: 0 0 17px 1px #4fecff;
+}
+
+.container {
+    max-width: 1440px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#profileOptions {
+    width: 30%;
+    display: table;
+    margin: 0 20px 0 0;
+    float: left;
+}
+
+.profile-details {
+    max-height: 33vh;
+    overflow-y: auto;
+}
+
+#content {
+    display: table;
+    float: left;
+    width: 66%;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+.main-btns {
+    display: inline-block;
+    clear: both;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.main-btns button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: whitesmoke;
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 3px auto;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid #e7e7e7bd;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 0 0 0px 0px rgb(175, 44, 255);
+}
+
+.subtle-hr {
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    -webkit-box-shadow: 0px 11px 2px -10px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 11px 2px -10px rgba(255,255,255,1);
+    box-shadow: 0px 11px 2px -10px rgba(255,255,255,1);
+    border: 0;
+}
+
+button:hover {
+    box-shadow: inset 0 0 7px 2px rgb(175, 44, 255);
+}
+
+.detail-menu {
+    padding: 0;
+    margin: 0px auto;
+    display: table;
+    width: 100%;
+    clear: both;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.detail-menu li {
+    padding: 9px 12px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.detail-menu .separator {
+    width: 90%;
+    opacity: 0.2;
+    transform: scaleX(1.1);
+    margin: 0px auto;
+    margin-top: 3px;
+    display: block;
+}
+
+.detail-menu svg path {
+    transform: scale(2);
+}
+
+#bgVideo {
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.2s linear 2s 1 forwards;
+    -webkit-animation: fadeIn 0.2s linear 2s 1 forwards;
+}
+
+.main-separator {
+    width: 100%;
+    opacity: 0.5;
+    transform: scaleY(0.7);
+}
+
+.meta-info {
+
+}
+
+.meta-info-title {
+    width: 28%;
+    float: left;
+    padding: 15px 10px;
+}
+
+.meta-info-title span {
+    font-size: 23px;
+    line-height: 2.4rem;
+}
+
+.meta-info-text {
+    display: inline-block;
+    padding: 15px 10px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.meta-info-text span {
+    font-size: 20px;
+    line-height: 2.4rem;
+}
+
+.trophies {
+    display: table;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    margin: 10px auto;
+}
+
+.trophies .star {    
+    width: 60px;
+    padding: 10px;
+    display: block;
+    float: left;
+}
+
+.trophies .progress-bar {
+    width: 100px;
+    float: left;
+}
+
+.trophies .progress-bar .amount {
+    font-size: 25px;
+}
+
+.trophies .progress-bar .percent {
+    font-size: 20px;
+    line-height: 1.8rem;
+    float: right;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.left-trophies {
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.recent-trophies {
+    margin: 0;
+    padding: 0 0 0 2em;
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+.recent-trophies h3 {
+    font-weight: 200 !important;
+    font-size: 22px;
+}
+
+.recent-trophies h1 {
+    font-size: 38px;
+}
+
+.recent-trophies h1, .recent-trophies h3 {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.recent-trophies li {
+    width: 20%;
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+.recent-trophies li img {
+    display: block;
+    max-height: 70px;
+    float: left;
+}
+
+.recent-trophies li span {
+    font-size: 18px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 0;
+}
+
+.progress-bar .bar {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 5px auto;
+}
+
+.progress-bar .bar-inner {
+    width: 30%;
+    background: white;
+    height: 100%;
+}
+
+#recent-games {
+    width: 100%;
+    max-height: 55vh;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+#recent-games .game {
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#recent-games .game:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 5px 26px 119px -9px #00000059;
+}
+
+#recent-games .game:active {
+    opacity: 0.8;
+}
+
+#recent-games .game .thumbnail {
+    max-width: 200px;
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+
+.game .console {
+    background: white;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 12%;
+}
+
+.game .game-info {
+    display: block;
+    float: left;
+    width: 68%;
+    padding: 0 5px;
+}
+
+.game .game-title {
+    font-weight: 200;
+    font-size: 33px;
+}
+
+.game .game-sub-title {
+    font-weight: 200;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: 200;
+    text-shadow: 0 0 0 10px #000;
+}
+
+.profile-sub-name {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 200;
+    text-shadow: 0 0 0 10px #000;
+}
